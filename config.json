@@ -1,0 +1,36 @@
+{
+  "side_containers": {
+    "elasticsearch": {
+      "image": "docker.elastic.co/elasticsearch/elasticsearch:8.4.2",
+      "volumes": [
+        "/var/opt/loko/volumes/elastic_kibana/elasticsearch/data:/usr/share/elasticsearch/data"
+        ],
+      "ports": {
+        "9200": null,
+        "9300": null
+      },
+      "environment": {
+        "discovery.type": "single-node",
+        "xpack.security.enabled": "false",
+        "xpack.security.enrollment.enabled": "false"
+      }
+    },
+    "kibana": {
+      "image": "docker.elastic.co/kibana/kibana:8.4.2",
+      "ports": {
+        "5601": null
+      },
+      "environment": {
+        "ELASTICSEARCH_URL": "http://elasticsearch:9200"
+      },
+      "expose": [
+        5601
+      ],
+      "gui": {
+        "name": "Kibana",
+        "path": "/",
+        "gw": false
+      }
+    }
+  }
+}
