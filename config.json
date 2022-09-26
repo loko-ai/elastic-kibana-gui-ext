@@ -3,7 +3,7 @@
     "elasticsearch": {
       "image": "docker.elastic.co/elasticsearch/elasticsearch:8.4.2",
       "volumes": [
-        "/var/opt/loko/volumes/elastic_kibana/elasticsearch/data:/usr/share/elasticsearch/data"
+        "/var/opt/loko/volumes/elastic-kibana-gui-ext/elasticsearch/data:/usr/share/elasticsearch/data"
         ],
       "ports": {
         "9200": null,
