@@ -1,9 +1,9 @@
 {
-  "name": "elastic_kibana",
-  "id": "elastic_kibana",
+  "name": "elastic-kibana-gui-ext",
+  "id": "elastic-kibana-gui-ext",
   "description": "",
   "created_on": "26/09/2022, 08:11:15",
-  "last_modify": "26/09/2022, 13:11:00",
+  "last_modify": "26/09/2022, 14:49:38",
   "graphs": {
     "main": {
       "nodes": [
@@ -11,7 +11,7 @@
           "id": "79bc7e8a-92f6-4ee0-bff7-bbb24617e49d",
           "position": {
             "x": 402,
-            "y": 162
+            "y": 164
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
@@ -90,13 +90,14 @@
                 "type": "String",
                 "value": "Hello world!"
               }
-            }
+            },
+            "locked": null
           },
           "selectable": true,
           "draggable": true,
           "positionAbsolute": {
             "x": 402,
-            "y": 162
+            "y": 164
           },
           "__class__": "Node"
         },
@@ -110,7 +111,7 @@
           "dragHandle": "#commentHandle",
           "sourcePosition": "right",
           "targetPosition": "left",
-          "width": 716,
+          "width": 612,
           "height": 168,
           "selected": false,
           "dragging": false,
@@ -118,7 +119,7 @@
             "comment": "Run this flow!",
             "fill": "#F74B65",
             "height": 168,
-            "width": 716
+            "width": 612
           },
           "zIndex": -1,
           "selectable": false,
@@ -130,21 +131,21 @@
           "__class__": "Node"
         },
         {
-          "id": "b04465c6-5a88-421d-8588-688177d7b501",
+          "id": "43696b4d-9331-4c39-b4b4-db6521ced83b",
           "position": {
-            "x": 709,
-            "y": 197
+            "x": 621,
+            "y": 191
           },
           "type": "custom",
           "dragHandle": "#nodeHandle",
           "sourcePosition": "right",
           "targetPosition": "left",
-          "width": 348,
+          "width": 306,
           "height": 56,
           "selected": false,
           "dragging": false,
           "data": {
-            "name": "How to connect elastic with Kibana",
+            "name": "How to connect Elastic+Kibana",
             "events": null,
             "description": "Run this extension to prepare your host to first run Elastic and Kibana",
             "inputs": [
@@ -163,7 +164,7 @@
             ],
             "configured": true,
             "options": {
-              "group": "Custom",
+              "group": "Storage",
               "args": [
                 {
                   "name": "comment",
@@ -195,18 +196,18 @@
           "selectable": true,
           "draggable": true,
           "positionAbsolute": {
-            "x": 709,
-            "y": 197
+            "x": 621,
+            "y": 191
           },
           "__class__": "Node"
         }
       ],
       "edges": [
         {
-          "id": "reactflow__edge-79bc7e8a-92f6-4ee0-bff7-bbb24617e49doutput-b04465c6-5a88-421d-8588-688177d7b501input",
+          "id": "reactflow__edge-79bc7e8a-92f6-4ee0-bff7-bbb24617e49doutput-43696b4d-9331-4c39-b4b4-db6521ced83binput",
           "source": "79bc7e8a-92f6-4ee0-bff7-bbb24617e49d",
           "sourceHandle": "output",
-          "target": "b04465c6-5a88-421d-8588-688177d7b501",
+          "target": "43696b4d-9331-4c39-b4b4-db6521ced83b",
           "targetHandle": "input",
           "data": {
             "startColor": "#D770AD",
