@@ -18,7 +18,7 @@ services:
        - xpack.security.enrollment.enabled=false
      mem_limit: 4g
      volumes:
-       - ./elasticsearch/data:/usr/share/elasticsearch/data
+       - /var/opt/loko/elastic-kibana-gui-ext/elasticsearch/data:/usr/share/elasticsearch/data
        ####data folder must have chmod 777 and chown root:root (solo su data, non nelle cartelle interne)
      networks:
        - elastic-net
